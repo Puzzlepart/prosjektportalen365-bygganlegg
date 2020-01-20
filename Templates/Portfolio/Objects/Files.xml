@@ -1,8 +1,14 @@
 <pnp:Files xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
-    <pnp:File Src="Prosjektmaler\Bygg og anlegg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
+    <pnp:File Src="Prosjektmaler\Bygg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
         <pnp:Properties>
-            <pnp:Property Key="Title" Value="Prosjektmal - Bygg og anlegg" />
-            <pnp:Property Key="GtDescription" Value="Dette er malen for bygg- og anleggs-prosjekter." />
+            <pnp:Property Key="Title" Value="Prosjektmal - Bygg" />
+            <pnp:Property Key="GtDescription" Value="Dette er malen for byggeprosjekter." />
+        </pnp:Properties>
+    </pnp:File>
+    <pnp:File Src="Prosjektmaler\Anlegg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
+        <pnp:Properties>
+            <pnp:Property Key="Title" Value="Prosjektmal - Anlegg" />
+            <pnp:Property Key="GtDescription" Value="Dette er malen for anleggsprosjekter." />
         </pnp:Properties>
     </pnp:File>
     <pnp:Directory Src="Konfigurasjonsfiler" Folder="Konfigurasjonsfiler" Overwrite="true" Recursive="false" IncludedExtensions="*.txt" />
