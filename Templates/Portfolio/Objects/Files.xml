@@ -2,13 +2,13 @@
     <pnp:File Src="Prosjektmaler\Bygg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
         <pnp:Properties>
             <pnp:Property Key="Title" Value="Prosjektmal - Bygg" />
-            <pnp:Property Key="GtDescription" Value="Dette er malen for byggeprosjekter." />
+            <pnp:Property Key="GtDescription" Value="Dette er malen for byggeprosjekter. Byggeprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
         </pnp:Properties>
     </pnp:File>
     <pnp:File Src="Prosjektmaler\Anlegg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
         <pnp:Properties>
             <pnp:Property Key="Title" Value="Prosjektmal - Anlegg" />
-            <pnp:Property Key="GtDescription" Value="Dette er malen for anleggsprosjekter." />
+            <pnp:Property Key="GtDescription" Value="Dette er malen for anleggsprosjekter. Anleggsprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
         </pnp:Properties>
     </pnp:File>
     <pnp:Directory Src="Konfigurasjonsfiler" Folder="Konfigurasjonsfiler" Overwrite="true" Recursive="false" IncludedExtensions="*.txt" />
