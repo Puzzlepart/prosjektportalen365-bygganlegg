@@ -15,6 +15,20 @@
             <pnp:DataValue FieldName="GtLccFields">N/A</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
         </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">Standarddokumenter Bygg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccSourceList">Standarddokumenter Bygg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDestinationList">Dokumenter</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccFields">Title</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">Standarddokumenter Anlegg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccSourceList">Standarddokumenter Anlegg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDestinationList">Dokumenter</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccFields">Title</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
+        </pnp:DataRow>
     </pnp:DataRows>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Security/DefaultSecurity.xml" />
 </pnp:ListInstance>
