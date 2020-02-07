@@ -3,15 +3,15 @@
     <pnp:DataRows UpdateBehavior="Overwrite" KeyColumn="Title">
         <pnp:DataRow>
             <pnp:DataValue FieldName="ContentTypeId">0x0100B8B4EE61A547B247B49CFC21B67D5B7D01</pnp:DataValue>
-            <pnp:DataValue FieldName="Title">Planneroppgaver for Bygg</pnp:DataValue>
-            <pnp:DataValue FieldName="GtLccSourceList">Planneroppgaver for Bygg</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">Planneroppgaver Bygg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccSourceList">Planneroppgaver Bygg</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccFields">N/A</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
         </pnp:DataRow>
         <pnp:DataRow>
             <pnp:DataValue FieldName="ContentTypeId">0x0100B8B4EE61A547B247B49CFC21B67D5B7D01</pnp:DataValue>
-            <pnp:DataValue FieldName="Title">Planneroppgaver for Anlegg</pnp:DataValue>
-            <pnp:DataValue FieldName="GtLccSourceList">Planneroppgaver for Anlegg</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">Planneroppgaver Anlegg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccSourceList">Planneroppgaver Anlegg</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccFields">N/A</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
         </pnp:DataRow>

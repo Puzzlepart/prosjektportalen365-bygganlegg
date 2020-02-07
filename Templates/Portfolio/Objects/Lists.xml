@@ -3,8 +3,8 @@
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Prosjektstatus.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Prosjektkolonner.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Listeinnhold.xml" />
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Planneroppgaver for Bygg.xml" />
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Planneroppgaver for Anlegg.xml" />
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Planneroppgaver Bygg.xml" />
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Planneroppgaver Anlegg.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Standarddokumenter Bygg.xml" />
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Standarddokumenter Anlegg.xml" />
 </pnp:Lists>
