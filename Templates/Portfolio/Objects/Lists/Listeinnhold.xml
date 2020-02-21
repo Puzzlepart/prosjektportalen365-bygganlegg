@@ -37,6 +37,7 @@
             <pnp:DataValue FieldName="Title">Fasesjekkliste Bygg</pnp:DataValue>
             <pnp:DataValue FieldName="GtDescription">Fasesjekkpunkter for byggeprosjekter.</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccSourceList">Fasesjekkliste Bygg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDestinationList">Fasesjekkliste</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccFields">GtSortOrder,Title,GtProjectPhase</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
         </pnp:DataRow>
@@ -44,6 +45,7 @@
             <pnp:DataValue FieldName="Title">Fasesjekkliste Anlegg</pnp:DataValue>
             <pnp:DataValue FieldName="GtDescription">Fasesjekkpunkter for anleggsprosjekter.</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccSourceList">Fasesjekkliste Anlegg</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDestinationList">Fasesjekkliste</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccFields">GtSortOrder,Title,GtProjectPhase</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccDefault">0</pnp:DataValue>
         </pnp:DataRow>
