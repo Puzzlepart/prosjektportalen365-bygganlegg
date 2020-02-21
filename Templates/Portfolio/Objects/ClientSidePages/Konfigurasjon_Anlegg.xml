@@ -1,0 +1,11 @@
+<pnp:ClientSidePage PageName="Konfigurasjon_Anlegg.aspx" Layout="Home" Overwrite="true" EnableComments="false" Title="Konfigurasjon av Prosjektportalen (Anlegg)" 
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+    <pnp:Sections>
+        <pnp:Section Order="1" Type="OneColumn">
+            <pnp:Controls>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="1" />
+            </pnp:Controls>
+        </pnp:Section>
+    </pnp:Sections>
+    <pnp:Header Type="None" />
+</pnp:ClientSidePage>
