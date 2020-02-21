@@ -1,0 +1,6 @@
+<pnp:CustomActions xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+    <pnp:WebCustomActions>
+        <pnp:CustomAction Group="Customization" Location="Microsoft.SharePoint.SiteSettings" Name="Konfigurasjon av Prosjektportalen (Bygg)" Title="Konfigurasjon av Prosjektportalen (Bygg)" Url="SitePages/Konfigurasjon_Bygg.aspx" Rights="ManageWeb" Sequence="2002" />
+        <pnp:CustomAction Group="Customization" Location="Microsoft.SharePoint.SiteSettings" Name="Konfigurasjon av Prosjektportalen (Anlegg)" Title="Konfigurasjon av Prosjektportalen (Anlegg)" Url="SitePages/Konfigurasjon_Anlegg.aspx" Rights="ManageWeb" Sequence="2003" />
+    </pnp:WebCustomActions>
+</pnp:CustomActions>
