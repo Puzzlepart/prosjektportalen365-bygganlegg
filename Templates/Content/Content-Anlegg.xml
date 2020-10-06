@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema https://raw.githubusercontent.com/OfficeDev/PnP-Provisioning-Schema/master/OfficeDevPnP.ProvisioningSchema/ProvisioningSchema-2020-02.xsd">
+    <pnp:Preferences></pnp:Preferences>
+    <pnp:Templates ID="CONTAINER-TEMPLATE-PP-ANLEGG-PORTFOLIO-CONTENT-NO-NB">
+        <pnp:ProvisioningTemplate ID="TEMPLATE-PP-ANLEGG-PORTFOLIO-NO-NB" Scope="RootSite">
+            <pnp:Files>
+                <pnp:File Src="Prosjektmaler\Anlegg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
+                    <pnp:Properties>
+                        <pnp:Property Key="Title" Value="Prosjektmal - Anlegg" />
+                        <pnp:Property Key="GtDescription" Value="Dette er malen for anleggsprosjekter. Anleggsprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
+                        <pnp:Property Key="IconName" Value="DeliveryTruck" />
+                        <pnp:Property Key="IsDefaultTemplate" Value="0" />
+                    </pnp:Properties>
+                </pnp:File>
+            </pnp:Files>
+            <pnp:Lists>
+                <pnp:ListInstance Title="Standarddokumenter Anlegg" TemplateType="101" Url="Standarddokumenter_Anlegg" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" EnableAttachments="false">
+                    <pnp:Folders>
+                        <pnp:Folder Name="100 Grunnlag">
+                            <pnp:Folder Name="110 Off. forhold-tillatelser"></pnp:Folder>
+                            <pnp:Folder Name="120 Politisk behandling"></pnp:Folder>
+                            <pnp:Folder Name="130 Media (info)"></pnp:Folder>
+                            <pnp:Folder Name="140 Oppdrag og grunnlagsdata"></pnp:Folder>
+                            <pnp:Folder Name="150 Avtaler (ekskl. leverandøravtaler)"></pnp:Folder>
+                            <pnp:Folder Name="160 Prosjektplaner- fullmakter"></pnp:Folder>
+                            <pnp:Folder Name="170 Notater- erfaringer"></pnp:Folder>
+                            <pnp:Folder Name="180 Adresselister"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="200 Anskaffelser">
+                            <pnp:Folder Name="210 Rådgivere og Arkitekter"></pnp:Folder>
+                            <pnp:Folder Name="220 Byggeledelse"></pnp:Folder>
+                            <pnp:Folder Name="230 Entreprenører"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="300 Økonomi- fremdrift">
+                            <pnp:Folder Name="310 Budsjett"></pnp:Folder>
+                            <pnp:Folder Name="320 Fakturaer"></pnp:Folder>
+                            <pnp:Folder Name="330 Endringer"></pnp:Folder>
+                            <pnp:Folder Name="340 Fremdrift"></pnp:Folder>
+                            <pnp:Folder Name="350 Rapportering"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="400 Korrespondanse">
+                            <pnp:Folder Name="410 Kommune"></pnp:Folder>
+                            <pnp:Folder Name="420 Eksterne myndigheter"></pnp:Folder>
+                            <pnp:Folder Name="430 Informasjon"></pnp:Folder>
+                            <pnp:Folder Name="440 Arkitekter og Rådgivere"></pnp:Folder>
+                            <pnp:Folder Name="450 Entreprenører"></pnp:Folder>
+                            <pnp:Folder Name="460 Byggeleder"></pnp:Folder>
+                            <pnp:Folder Name="470 Grunneiere"></pnp:Folder>
+                            <pnp:Folder Name="480 Andre"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="500 Møter">
+                            <pnp:Folder Name="510 Byggherremøter"></pnp:Folder>
+                            <pnp:Folder Name="520 Prosjektering"></pnp:Folder>
+                            <pnp:Folder Name="530 Byggemøter"></pnp:Folder>
+                            <pnp:Folder Name="540 Fremdriftsmøter"></pnp:Folder>
+                            <pnp:Folder Name="550 Særmøter"></pnp:Folder>
+                            <pnp:Folder Name="560 Andre møter"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="600 KS, SHA, Miljø, Risiko">
+                            <pnp:Folder Name="610 KS"></pnp:Folder>
+                            <pnp:Folder Name="620 SHA"></pnp:Folder>
+                            <pnp:Folder Name="630 Miljø"></pnp:Folder>
+                            <pnp:Folder Name="640 Risiko"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="700 Tegninger og Rapporter">
+                            <pnp:Folder Name="710 Tegninger"></pnp:Folder>
+                            <pnp:Folder Name="720 Bilder og video"></pnp:Folder>
+                            <pnp:Folder Name="730 Fagrapporter"></pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="800 FDV">
+                            <pnp:Folder Name="810 FDV Bygg"></pnp:Folder>
+                            <pnp:Folder Name="820 FDV Anlegg"></pnp:Folder>
+                            <pnp:Folder Name="830 Protokoller- sluttrapport"></pnp:Folder>
+                        </pnp:Folder>
+                    </pnp:Folders>
+                </pnp:ListInstance>
+                <pnp:ListInstance Title="Fasesjekkliste Anlegg" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Fasesjekkliste_Anlegg" Hidden="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50000" DraftVersionVisibility="0" ContentTypesEnabled="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false">
+                    <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er oppdragsbestilling signert og mottatt?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">10</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er omfanget entydig beskrevet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">20</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er grunnlagsdokumenter vedlagt (rapporter, undersøkelser, tegninger)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">30</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er forhold til myndigheter avklart (reguleringsplaner, etc.)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">40</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er interessentanalyse gjennomført?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">50</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er kontrakten signert av begge parter?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">60</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er prosjektorganiseringen (oppdragsgiver/utførende) entydig? </pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">70</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er miljøkrav for prosjektet definert?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">80</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er økonomisk ramme rimelig i forhold til oppdragets omfang?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">90</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det søkt tilskudd av spillemidler til prosjektet? Er det i så fall avtalt hvordan dette skal konteres?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">100</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det andre finansierings-kilder i prosjektet? Er det i så fall avtalt hvordan dette skal konteres?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">110</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det avklart om prosjektet har rett på 100% mva. fradrag?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">120</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det utarbeidet fremdriftsplan for oppdraget?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">130</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det tatt høyde for saksbehandlingstid hos eksterne aktører? (politisk P og B, fylkesmann, Hafslund, NVE, Statens vegvesen, andre)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">140</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er krav til universell utforming definert?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">150</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle arkivverdige dokumenter lagret i arkivsystemet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">160</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er grunnbok for tinglyste rettigheter sjekket og OK?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">170</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det sjekket med fylkeskommunen om det er registrert eller skal registreres kulturminner på anleggsområdet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">180</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det sjekket med fylkeskommunen om det er krav om arkeologiske registreringer på anleggsområdet (må gjøres i sommerhalvåret)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">190</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det sjekket at det er gjort naturtyperegistreringer på anleggsområdet (må gjøres i sommerhalvåret)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">200</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle relevante interessenter kontaktet? Inklusive KTA – drift, naboer/ grunneiere og kabelselskapene?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">210</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle rettighetsforhold avklar med grunneiere?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">220</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er mva fordelingsnøkkel avtalt med KTA og lagt inn i Agresso?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">230</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det skrevet avtale om SHA- koordinering prosjektering (KP)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">240</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det skrevet avtale om SHA- koordinering utførelse (KU)?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">250</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er søknad om rammetillatelse godkjent?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">260</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er konkurransegrunnlaget kvalitetssikret?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">270</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det mottatt utfylte egenrapporteringsskjema for lønns og arbeidsvilkår?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">280</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle arkivverdige dokumenter lagret i arkivsystemet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Planlegge|1c286a0e-da40-451a-bab2-9e0583392ee3</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">290</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det sendt forhåndsmelding til arbeidstilsynet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">300</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er tiltak fra interessent analyse og evt. kommunikasjonsplan gjennomført?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">310</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er søknad om IG (igangsettelse) godkjent?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">320</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er risikovurdering og SHA- plan oppdatert?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">330</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er miljøplan oppdatert og fulgt opp?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">340</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er FDV-/sluttdokumentasjon påbegynt?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">350</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle arkivverdige dokumenter lagret i arkivsystemet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Gjennomføre|9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">360</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er all FDV-/sluttdokumentasjon mottatt?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">370</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle feil og mangler rettet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">380</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Har driftspersonale og brukere fått nødvendig opplæring?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">390</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er overtagelsesprotokoll signert?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">400</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er overleveringsprotokoll til KTA signert?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">410</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det skrevet sluttrapport med sluttregnskap?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">420</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er det skrevet evalueringsrapporter av entreprenørene?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">430</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle innestående beløp utbetalt til entreprenøren?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">440</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Er alle arkivverdige dokumenter lagret i arkivsystemet?</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtProjectPhase'>Avslutte|1807d6c2-b4bd-415f-98aa-a4a2ccff8d11</pnp:DataValue>
+                            <pnp:DataValue FieldName="GtSortOrder">450</pnp:DataValue>
+                        </pnp:DataRow>
+                    </pnp:DataRows>
+                </pnp:ListInstance>
+                <pnp:ListInstance Title="Planneroppgaver Anlegg" TemplateType="100" Url="Lists/Planneroppgaver_Anlegg" ContentTypesEnabled="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false" EnableVersioning="true">
+                    <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Analysere alternative løsninger</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Mulighetsstudie (F0)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Vurdere tomter, trafikkforhold, energiløsninger etc (se Sjekkliste for oppdragsavtale- bygg)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Mulighetsstudie (F0)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Gjøre overordnede kostnadsvurderinger/ budsjettavsetning for de ulike alternativene</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Mulighetsstudie (F0)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Vurdere overordnet fremdriftsplan</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Mulighetsstudie (F0)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Foreta en Interessentanalyse</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Mulighetsstudie (F0)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Forberede politisk sak/presentasjon av alternativer</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Mulighetsstudie (F0)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Etablere prosjektorganisasjon</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Rom og Funksjonsprogram (F1)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Kontakte HVO og AMU;Skrive organisasjonsplan;Holde oppstartsmøte;Etablere rapporteringsrutiner;Oppdatere/gjennomføre en interessentanalyse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Engasjere arkitekt/rådgivere</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Rom og Funksjonsprogram (F1)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Utarbeide konkurransegrunnlag for arkitekt/rådgiver;Utlyse konkurranse(r);Evaluere tilbud;Avholde kontraktsmøte;Utforme og signere avtaledokument</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utarbeide rom- og funksjonsprogram</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Rom og Funksjonsprogram (F1)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Utrede og beskrive flere ulike alternativ (hvis relevant);Vurdere fordeler og ulemper ved ulike entrepriseformer basert på utfordringer og suksesskriterier for prosjektet. (Endelig beslutning om entrepriseform tas av styringsgruppen);Intern eller ekstern kvalitetssikring;Intern godkjenning i Styringsgruppen (IG1)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utarbeide Politisk Saksfremlegg (PS1)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Rom og Funksjonsprogram (F1)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Sikre relevante statlige tilskudd</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Rom og Funksjonsprogram (F1)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Vurdere mulighetene for statlige tilskudd;Kontakte Idretts og Friluftsliv og starte prosessen for å søke spillemidler i henhold til rutine for spillemidler i prosjekt;Kontakte Husbanken og starte prosessen for å søke Husbanktilskudd i henhold til rutine for Husbanktilskudd;Identifisere aktuelle tilskuddsmidler for energi- og miljøtiltak i henhold til Rutinebeskrivelse for prosjekter som søker og mottar tilskudd til energi- og miljøtiltak</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utarbeide oppdragsavtale</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Konsept - Rom og Funksjonsprogram (F1)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Fyll ut sjekkliste for oppdragsbeskrivelse;Gå gjennom sjekkliste med KS-leder</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utføre skisseprosjekt</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Skisseprosjekt (F2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Oppstartmøte;Vurdering/ justering av program;Oppdatere prosjektorganisasjon;Ajourføre fremdriftsplan og kalkyle;Oppdatere interessentanalyse med tiltak;Skrive kommunikasjonsplan;Kontakt med bygg/ regulering;Forslag til konstruksjoner;SHA i skisseprosjekt;Miljøgjennomgang og miljøplan;Miljørettet helsevern (barnehager og skoler);Konsultere HVO og AMU;Grunn- og rettighetserverv;Universell utforming;Sammenstilling av skisseprosjekt</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Intern godkjenning i styringsgruppen (IG2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Skisseprosjekt (F2)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Kontrahering av arkitekt- og rådgivertjenester, ev. entreprenør</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Forprosjekt (F2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Utarbeide konkurransegrunnlag;Utlyse konkurranse(r);Evaluere tilbud;Avholde kontraktsmøte;Utforme og signere avtaledokument;Avtale om SHA- koordinering utførelse (KU)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utføre forprosjekt</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Forprosjekt (F2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Følge opp/oppdatere interessentanalyse med tiltak;Kontakt IKT;Søke statlige tilskudd (hvis relevant);Oppdater miljøplan;Utarbeide/oppdatere SHA-plan;Beregne livsløpskostnader (LCC);Sende rammesøknad;Utarbeide fordelingsnøkkel (dersom ikke 100% mva kompensasjon);Utarbeide forprosjekttegninger;Sende forhåndsmelding til arbeidstilsynet;Fremme sak i rådet for mennesker med nedsatt funksjonsevne;Kontakte AMU;Oppdatere plandokumenter;Sammenstille forprosjekt;Gjennomføre usikkerhetsanalyse;Oppdatere kalkyle</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Ekstern kvalitetssikring (K2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Forprosjekt (F2)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Intern godkjenning i styringsgruppen (IG3)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Forprosjekt (F2)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utarbeide politisk saksfremlegg (PS2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Forprosjekt (F2)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Detaljprosjekt (F2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Detaljprosjekt (F2)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Kontrahering av entreprenør (Dersom prosjektet gjennomføres som totalentreprise, samspillentreprise, eller OPS- entreprise)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Detaljprosjekt (F2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Utarbeide konkurransegrunnlag;Kvalitetssikre konkurransegrunnlag;Utlyse konkurranse(r);Evaluere tilbud;Avholde kontraktsmøte;Utforme og signere avtaledokument</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Detaljprosjektering</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Detaljprosjekt (F2)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Følge opp/oppdatere interessentanalyse med tiltak;Følge opp/oppdatere kommunikasjonsplan;Oppdatere miljøplan;Oppdater SHA-plan;Følge opp tiltak fra usikkerhetsanalysen;Oppdatere kalkyle;Sammenstille detaljprosjekt;Sende rammesøknad (hvis ikke utført i forprosjekt);Evaluere arkitekt og rådgivertjenester;Behandle rammesøknad</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Intern godkjenning i styringsgruppen (IG4)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Planlegge - Detaljprosjekt (F2)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Kontrahering av entreprenør (dersom prosjektet gjennomføres som hovedentreprise, delt entreprise eller generalentreprise)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Utarbeide konkurransegrunnlag;Kvalitetssikre konkurransegrunnlag;Utlyse konkurranse(r);Evaluere tilbud;Avholde kontraktsmøte;Utforme og signere avtaledokument</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Sende søknad om igangsetting (IG)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Behandling av søknad om IG</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Holde oppstartsmøte</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Definere organisasjon og roller</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utøve prosjektledelse i byggefasen</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Følge opp entreprenør og oppdatere planer;Følge opp og oppdatere kommunikasjonsplan;Følge opp og oppdatere usikkerhetsanalyse;Planlegge opplæring av driftspersonell</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Installasjon</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Igangkjøring (inkl. funkjsonstester)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Forbefaring</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Teknisk ferdigstillelse</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Sjekke mottatt FDV dokumentasjon</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Byggefase (F3)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Byggvask 1</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Idriftsettelse (inkl. fullskala tester)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Opplæring av driftspersonell</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Byggvask 2 </pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Ferdigbefaring</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Søke om midlertidig brukstillatelse og ferdigattest</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Utbedring av mangler</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Bygg med tekniske anlegg klart for prøvedrift</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Overtakelse fra entreprenør</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Overleveringsmøte med forvalter og controller</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Økonomisk avslutning</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtChecklist'>Følge opp eventuelle utbetalinger i henhold til rutiner statlige tilskudd;Sende sluttrapport til Idretts og Friluftsliv i henhold til rutine for spillemidler i prosjekt;Sikre utbetaling fra Husbanktilskudd i henhold til rutine for Husbanktilskudd;Sende sluttrapport til Enova i henhold til Rutinebeskrivelse for prosjekter som søker og mottar tilskudd til energi- og miljøtiltak;Gjøre en gjennomgang av tilsagnsbrev med kontraktsfestet energiresultat med EDF henhold til Rutinebeskrivelse for prosjekter som søker og mottar tilskudd til energi- og miljøtiltak </pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Intern godkjenning i Styringsgruppen (IG5)</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Skrive sluttrapport og evalueringsrapporter</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Gjennomføre - Sluttfase og overtakelse</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Inngå service og vedlikeholdsavtaler</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Oppfølgingsmøte  1 med entreprenør og PL fra PRU</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Oppfølgingsmøte  2 med entreprenør og PL fra PRU</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Oppfølgingsmøte 3 med entreprenør og PL fra PRU</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Prøvedrift system A</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Prøvedrift system B</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Prøvedrift system C</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Garantibefaring</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Gjennomgang av prosjektet og hvilke midler som følger bygget over i forvaltning og drift etter prøvedrift</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Avslutte - Prøvedrift (1.driftsår)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Forvaltning</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Realisere - Garantiperiode (år 2-5)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Drift</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Realisere - Garantiperiode (år 2-5)</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName='Title'>Vedlikehold</pnp:DataValue>
+                            <pnp:DataValue FieldName='GtCategory'>Realisere - Garantiperiode (år 2-5)</pnp:DataValue>
+                        </pnp:DataRow>
+                    </pnp:DataRows>
+                </pnp:ListInstance>
+            </pnp:Lists>
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>
