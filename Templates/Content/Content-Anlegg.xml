@@ -9,7 +9,7 @@
                 <pnp:File Src="Prosjektmaler\Anlegg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
                     <pnp:Properties>
                         <pnp:Property Key="Title" Value="Prosjektmal - Anlegg" />
-                        <pnp:Property Key="GtDescription" Value="Dette er malen for anleggsprosjekter. Anleggsprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
+                        <pnp:Property Key="GtDescription" Value="Anleggsprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
                         <pnp:Property Key="IconName" Value="DeliveryTruck" />
                         <pnp:Property Key="IsDefaultTemplate" Value="0" />
                     </pnp:Properties>
@@ -76,8 +76,8 @@
                         </pnp:Folder>
                     </pnp:Folders>
                 </pnp:ListInstance>
-                <pnp:ListInstance Title="Fasesjekkliste Anlegg" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Fasesjekkliste_Anlegg" Hidden="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50000" DraftVersionVisibility="0" ContentTypesEnabled="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false">
-                    <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">>
+                <pnp:ListInstance Title="Fasesjekkliste Anlegg" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Fasesjekkliste_Anlegg" Hidden="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50000" DraftVersionVisibility="0" EnableFolderCreation="false" EnableAttachments="false">
+                    <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">
                         <pnp:DataRow>
                             <pnp:DataValue FieldName='Title'>Er oppdragsbestilling signert og mottatt?</pnp:DataValue>
                             <pnp:DataValue FieldName='GtProjectPhase'>Konsept|dca0a226-0907-4c54-8624-6b51fcac7a92</pnp:DataValue>
