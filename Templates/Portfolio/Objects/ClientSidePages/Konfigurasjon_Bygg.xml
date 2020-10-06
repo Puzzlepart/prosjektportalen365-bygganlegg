@@ -1,5 +1,5 @@
 <pnp:ClientSidePage PageName="Konfigurasjon_Bygg.aspx" Layout="Home" Overwrite="true" EnableComments="false" Title="Konfigurasjon av Prosjektportalen (Bygg)" 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
     <pnp:Sections>
         <pnp:Section Order="1" Type="OneColumn">
             <pnp:Controls>
