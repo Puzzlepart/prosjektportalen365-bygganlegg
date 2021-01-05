@@ -1,0 +1,33 @@
+<pnp:ListInstance Title="{resource:Lists_ProjectColumnConfiguration_Title}" Description="" DocumentTemplate="" Hidden="true" TemplateType="100" Url="{resource:Lists_ProjectColumnConfiguration_Url}" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" ContentTypesEnabled="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false" 
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+    <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">Status SHA (Ingen)</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumn">36</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnValue">Ingen hendelser siste måned</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnColor">#2da748</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnIconName">CircleFill</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">Status SHA (Hendelse)</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumn">36</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnValue">Hendelse registrert siste måned</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnColor">#e9b359</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnIconName">CircleFill</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">Status miljø (Ingen)</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumn">38</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnValue">Ingen hendelser siste måned</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnColor">#2da748</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnIconName">CircleFill</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">Status miljø (Hendelse)</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumn">38</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnValue">Hendelse registrert siste måned</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnColor">#e9b359</pnp:DataValue>
+            <pnp:DataValue FieldName="GtPortfolioColumnIconName">CircleFill</pnp:DataValue>
+        </pnp:DataRow>
+    </pnp:DataRows>
+</pnp:ListInstance>

@@ -1,0 +1,45 @@
+<pnp:ListInstance Title="{resource:Lists_StatusSections_Title}" TemplateType="100" Url="{resource:Lists_StatusSections_Url}" ContentTypesEnabled="true" Hidden="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false" 
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+    <pnp:DataRows KeyColumn="Title" UpdateBehavior="Skip">
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="GtSortOrder">100</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">Tilskudd</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecIcon">CaretSolidMirrored</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInNavbar">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInStatusSection">True</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowAsSection">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecFieldName">GtBAProjectSupport</pnp:DataValue>
+            <pnp:DataValue FieldName="ContentTypeId">0x01004CEFE616A94A3A48A27D9DEBDF5EC82802</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="GtSortOrder">110</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">SHA</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecIcon">Health</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInNavbar">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInStatusSection">True</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowAsSection">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecFieldName">GtBAProjectSHA</pnp:DataValue>
+            <pnp:DataValue FieldName="ContentTypeId">0x01004CEFE616A94A3A48A27D9DEBDF5EC82802</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="GtSortOrder">120</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">Miljø</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecIcon">Globe</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInNavbar">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInStatusSection">True</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowAsSection">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecFieldName">GtBAProjectEnv</pnp:DataValue>
+            <pnp:DataValue FieldName="ContentTypeId">0x01004CEFE616A94A3A48A27D9DEBDF5EC82802</pnp:DataValue>
+        </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="GtSortOrder">130</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">Status plan- og byggesak</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecIcon">BuildDefinition</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInNavbar">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowInStatusSection">True</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecShowAsSection">False</pnp:DataValue>
+            <pnp:DataValue FieldName="GtSecFieldName">GtBAProjectStatusCase</pnp:DataValue>
+            <pnp:DataValue FieldName="ContentTypeId">0x01004CEFE616A94A3A48A27D9DEBDF5EC82802</pnp:DataValue>
+        </pnp:DataRow>
+    </pnp:DataRows>
+</pnp:ListInstance>
