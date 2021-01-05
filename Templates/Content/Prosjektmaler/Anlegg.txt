@@ -1,5 +1,5 @@
 {
-    "Version": "1.2.0",
+    "Version": "1.2.4",
     "Parameters": {
         "ProvisionSiteFields": "Kolonner for Prosjektportalen (Prosjekt)",
         "ProjectContentTypeId": "0x0100805E9E4FEAAB4F0EABAB2600D30DB70C01",        
@@ -62,10 +62,6 @@
                 {
                     "ID": "6c2da0dc-77b1-4152-b751-97adf436faa0",
                     "Name": "GtRiskStatus"
-                },
-                {
-                    "ID": "6bd17911-c48a-4900-be61-54ae26207d78",
-                    "Name": "GtShowInPortfolio"
                 }
             ]
         },
@@ -73,7 +69,13 @@
             "ID": "0x0100A87AE71CBF2643A6BC9D0948BD2EE89701",
             "Name": "Risiko",
             "Description": "",
-            "Group": "Prosjektportalen innholdstyper"
+            "Group": "Prosjektportalen innholdstyper",
+            "FieldRefs": [
+                {
+                    "ID": "6bd17911-c48a-4900-be61-54ae26207d78",
+                    "Name": "GtShowInPortfolio"
+                }
+            ]
         },
         {
             "ID": "0x0100A87AE71CBF2643A6BC9D0948BD2EE89702",
@@ -266,19 +268,6 @@
             ]
         },
         {
-            "ID": "0x01007CFA9140CFBF430EB3A6CE7272E89CFB",
-            "Name": "Infoelement",
-            "Description": "",
-            "Group": "Prosjektportalen innholdstyper",
-            "FieldRefs": [
-                {
-                    "ID": "a3038ecc-69db-4179-b23b-5fdb0535b38c",
-                    "Name": "GtProjectInfoDescription",
-                    "Required": true
-                }
-            ]
-        },
-        {
             "ID": "0x010200C19C974828B24D469B69C22B2D1FFB63",
             "Name": "Prosjekthendelse",
             "Description": "",
@@ -293,33 +282,6 @@
                 {
                     "ID": "325543a5-815d-485d-a9a5-e0773ad762e9",
                     "Name": "GtProjectPhase"
-                }
-            ]
-        },
-        {
-            "ID": "0x01002CC709404B5B4751B6E1CD1CC0A3ED10",
-            "Name": "Milepæl",
-            "Group": "Prosjektportalen innholdstyper",
-            "FieldRefs": [
-                {
-                    "ID": "325543a5-815d-485d-a9a5-e0773ad762e9",
-                    "Name": "GtProjectPhase"
-                },
-                {
-                    "ID": "1fa322ec-6b56-4ea9-a1fd-2623e34083e6",
-                    "Name": "GtMilestonePlannedDate"
-                },
-                {
-                    "ID": "cbf2ae22-2c77-4ad0-a639-07fddfb5cd81",
-                    "Name": "GtMilestoneActualDate"
-                },
-                {
-                    "ID": "17a4b359-5819-4e7c-9894-a154320a661d",
-                    "Name": "GtMilestoneStatus"
-                },
-                {
-                    "ID": "dabdcbab-7bab-4fb2-8d65-85bd03809a8d",
-                    "Name": "GtMilestoneComment"
                 }
             ]
         },
@@ -370,6 +332,10 @@
                 {
                     "ID": "b0d03734-a5b1-4e85-a752-45b2da8df7dd",
                     "Name": "GtRealizationTime"
+                },
+                {
+                    "ID": "6bd17911-c48a-4900-be61-54ae26207d78",
+                    "Name": "GtShowInPortfolio"	   
                 }
             ]
         },
@@ -463,7 +429,7 @@
     "Navigation": {
         "QuickLaunch": [
             {
-                "Url": "SitePages/Hjem.aspx",
+                "Url": "SitePages/ProjectHome.aspx",
                 "Title": "Hjem"
             },
             {
@@ -543,11 +509,11 @@
         ]
     },
     "WebSettings": {
-        "WelcomePage": "SitePages/Hjem.aspx"
+        "WelcomePage": "SitePages/ProjectHome.aspx"
     },
     "ClientSidePages": [
         {
-            "Name": "Hjem.aspx",
+            "Name": "ProjectHome.aspx",
             "Title": "Hjem",
             "PageLayoutType": "Home",
             "CommentsDisabled": true,
@@ -767,35 +733,6 @@
             ]
         },
         {
-            "Title": "Informasjon",
-            "Description": "",
-            "Template": 100,
-            "ContentTypesEnabled": true,
-            "RemoveExistingContentTypes": true,
-            "ContentTypeBindings": [
-                {
-                    "ContentTypeID": "0x01007CFA9140CFBF430EB3A6CE7272E89CFB"
-                }
-            ],
-            "AdditionalSettings": {
-                "EnableVersioning": true
-            },
-            "Views": [
-                {
-                    "Title": "Alle elementer",
-                    "ViewFields": [
-                        "LinkTitle",
-                        "GtProjectInfoDescription"
-                    ],
-                    "AdditionalSettings": {
-                        "RowLimit": 30,
-                        "Paged": true,
-                        "ViewQuery": ""
-                    }
-                }
-            ]
-        },
-        {
             "Title": "Interessentregister",
             "Description": "",
             "Template": 100,
@@ -865,42 +802,10 @@
             ]
         },
         {
-            "Title": "Milepæler",
-            "Description": "",
-            "Template": 100,
-            "ContentTypesEnabled": true,
-            "RemoveExistingContentTypes": true,
-            "ContentTypeBindings": [
-                {
-                    "ContentTypeID": "0x01002CC709404B5B4751B6E1CD1CC0A3ED10"
-                }
-            ],
-            "AdditionalSettings": {
-                "EnableVersioning": true
-            },
-            "Views": [
-                {
-                    "Title": "Alle elementer",
-                    "ViewFields": [
-                        "LinkTitle",
-                        "GtMilestonePlannedDate",
-                        "GtMilestoneActualDate",
-                        "GtMilestoneStatus",
-                        "GtMilestoneComment"
-                    ],
-                    "AdditionalSettings": {
-                        "RowLimit": 30,
-                        "Paged": true,
-                        "ViewQuery": "<OrderBy><FieldRef Name=\"GtMilestonePlannedDate\" Ascending=\"TRUE\" /></OrderBy>"
-                    }
-                }
-            ]
-        },
-        {
             "Title": "Prosjektlogg",
             "Description": "",
             "Template": 100,
-            "ContentTypesEnabled": true,
+            "ContentTypesEnabled": false,
             "RemoveExistingContentTypes": true,
             "ContentTypeBindings": [
                 {
