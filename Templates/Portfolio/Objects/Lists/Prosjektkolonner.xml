@@ -108,7 +108,7 @@
             <pnp:DataValue FieldName="Title">SHA</pnp:DataValue>
             <pnp:DataValue FieldName="GtInternalName">GtBAProjectSHA</pnp:DataValue>
             <pnp:DataValue FieldName="GtManagedProperty">GtBAProjectSHAOWSCHCS</pnp:DataValue>
-            <pnp:DataValue FieldName="GtFieldDataType">Status</pnp:DataValue>
+            <pnp:DataValue FieldName="GtFieldDataType">Text</pnp:DataValue>
             <pnp:DataValue FieldName="GtColMinWidth">150</pnp:DataValue>
             <pnp:DataValue FieldName="GtShowFieldProjectStatus">False</pnp:DataValue>
             <pnp:DataValue FieldName="GtShowFieldFrontpage">False</pnp:DataValue>
@@ -136,7 +136,7 @@
             <pnp:DataValue FieldName="Title">Miljø</pnp:DataValue>
             <pnp:DataValue FieldName="GtInternalName">GtBAProjectEnv</pnp:DataValue>
             <pnp:DataValue FieldName="GtManagedProperty">GtBAProjectEnvOWSCHCS</pnp:DataValue>
-            <pnp:DataValue FieldName="GtFieldDataType">Status</pnp:DataValue>
+            <pnp:DataValue FieldName="GtFieldDataType">Text</pnp:DataValue>
             <pnp:DataValue FieldName="GtColMinWidth">150</pnp:DataValue>
             <pnp:DataValue FieldName="GtShowFieldProjectStatus">False</pnp:DataValue>
             <pnp:DataValue FieldName="GtShowFieldFrontpage">False</pnp:DataValue>
