@@ -88,15 +88,28 @@ Write-Host "[INFO] Applying PnP template [Portfolio] to [$Url]"
 #Apply-PnPProvisioningTemplate "$BasePath\Portfolio\Portfolio.xml" -ErrorAction Stop
 Write-Host "[SUCCESS] Successfully applied PnP template [Portfolio] to [$Url]" -ForegroundColor Green
 
-if ($Upgrade.IsPresent) {
-    Write-Host "[INFO] Applying PnP content template (Handlers:Files) to [$Url]"
-    Apply-PnPProvisioningTemplate "$BasePath\Content\Content-Bygg.xml" -Handlers Files -ErrorAction Stop
-    Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
-}
-else {
-    Write-Host "[INFO] Applying PnP content template to [$Url]"
-    Apply-PnPProvisioningTemplate "$BasePath\Content\Content-Bygg.xml" -ErrorAction Stop
-    Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
+if ($IncludeBygg.IsPresent) {
+    if ($Upgrade.IsPresent) {
+        Write-Host "[INFO] Applying Bygg PnP content template (Handlers:Files) to [$Url]"
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg\Content-Bygg.xml" -Handlers Files -ErrorAction Stop
+        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
+    }
+    else {
+        Write-Host "[INFO] Applying Bygg PnP content template to [$Url]"
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg\Content-Bygg.xml" -ErrorAction Stop
+        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
+    }
+} elseif ($IncludeAnlegg.IsPresent) {
+    if ($Upgrade.IsPresent) {
+        Write-Host "[INFO] Applying Anlegg PnP content template (Handlers:Files) to [$Url]"
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg\Content-Anlegg.xml" -Handlers Files -ErrorAction Stop
+        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
+    }
+    else {
+        Write-Host "[INFO] Applying Anlegg PnP content template to [$Url]"
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg\Content-Anlegg.xml" -ErrorAction Stop
+        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
+    }
 }
 
 Disconnect-PnPOnline
