@@ -1,6 +1,6 @@
 <pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
-    <Field ID="{b02982d3-9e9f-4172-a576-34bcbe3b8332}" Name="GtBAEndDateOriginal" DisplayName="Opprinnelig overtakelsesdato" Type="DateTime" Format="DateOnly" Group="{parameter:GenericFieldsGroup}" Description="" StaticName="GtBAEndDateOriginal"></Field>
-    <Field ID="{3060379a-34d5-4bfb-a97d-f6efa834ff69}" Name="GtBAProjectInvestementPhase" DisplayName="HP-fase" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="" FillInChoice="TRUE" StaticName="GtBAProjectInvestementPhase">
+    <Field ID="{b02982d3-9e9f-4172-a576-34bcbe3b8332}" Name="GtBAEndDateOriginal" DisplayName="Opprinnelig overtakelsesdato" Type="DateTime" Format="DateOnly" Group="{parameter:GenericFieldsGroup}" Description="Hva er (planlagt) overtakelsesdato hvor bestiller overtar prosjektleveransene" StaticName="GtBAEndDateOriginal"></Field>
+    <Field ID="{3060379a-34d5-4bfb-a97d-f6efa834ff69}" Name="GtBAProjectInvestementPhase" Hidden="true" DisplayName="HP-fase" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="" FillInChoice="TRUE" StaticName="GtBAProjectInvestementPhase">
         <CHOICES>
             <CHOICE>F0</CHOICE>
             <CHOICE>F1</CHOICE>
@@ -10,7 +10,7 @@
             <CHOICE>Ikke relevant</CHOICE>
         </CHOICES>
     </Field>
-    <Field ID="{c3cfcba3-299d-42e8-827b-a593ada04abc}" Name="GtBAProjectSupport" DisplayName="Tilskudd" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="" FillInChoice="TRUE" StaticName="GtBAProjectSupport">
+    <Field ID="{c3cfcba3-299d-42e8-827b-a593ada04abc}" Name="GtBAProjectSupport" DisplayName="Status tilskudd" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="Hva er status på eventuelle tilskuddsmuligehter for prosjektet?" FillInChoice="TRUE" StaticName="GtBAProjectSupport">
         <Default>Skal undersøkes/vurderes</Default>
         <CHOICES>
             <CHOICE>Skal undersøkes/vurderes</CHOICE>
@@ -23,26 +23,26 @@
             <CHOICE>Har fått utbetalt</CHOICE>
         </CHOICES>
     </Field>
-    <Field Type="Note" DisplayName="Kommentar, tilskudd" Description="" RichText="FALSE" ID="{b8c0ad18-467b-4e7d-8d6b-9ca37171f07b}" StaticName="GtBAProjectSupportComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectSupportComment" Group="{parameter:GenericFieldsGroup}" />
-    <Field ID="{58947845-13c8-4cb4-892c-90ea727e22a4}" Name="GtBAProjectSHA" DisplayName="SHA" Type="Choice" Format="RadioButtons" Group="{parameter:GenericFieldsGroup}" Description="" StaticName="GtBAProjectSHA">
+    <Field Type="Note" DisplayName="Kommentar, tilskudd" Description="Hvis relevant, beskriv hvor i søknadsprosessen prosjektet er og hva som er planlagt for neste periode" RichText="FALSE" ID="{b8c0ad18-467b-4e7d-8d6b-9ca37171f07b}" StaticName="GtBAProjectSupportComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectSupportComment" Group="{parameter:GenericFieldsGroup}" />
+    <Field ID="{58947845-13c8-4cb4-892c-90ea727e22a4}" Name="GtBAProjectSHA" DisplayName="Status SHA" Type="Choice" Format="RadioButtons" Group="{parameter:GenericFieldsGroup}" Description="Har det vært hendelser knyttet til SHA (Sikkerhet, helse, arbeidsmiljø) i siste periode?" StaticName="GtBAProjectSHA">
         <CHOICES>
             <CHOICE>Ingen hendelser siste måned</CHOICE>
             <CHOICE>Hendelse registrert siste måned</CHOICE>
         </CHOICES>
     </Field>
-    <Field Type="Note" DisplayName="Kommentar, SHA" Description="" RichText="FALSE" ID="{150c9db0-b582-4997-978a-c76f8a2cd8f5}" StaticName="GtBAProjectSHAComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectSHAComment" Group="{parameter:GenericFieldsGroup}" />
-    <Field ID="{df96c2a2-d85c-4d10-ac1f-c5d9bf87873c}" Name="GtBAProjectEnv" DisplayName="Miljø" Type="Choice" Format="RadioButtons" Group="{parameter:GenericFieldsGroup}" Description="" StaticName="GtBAProjectEnv">
+    <Field Type="Note" DisplayName="Kommentar, SHA" Description="Oppsummer kort det totale SHA-bildet for prosjektet og hvilke tiltak det planlegges for i neste periode" RichText="FALSE" ID="{150c9db0-b582-4997-978a-c76f8a2cd8f5}" StaticName="GtBAProjectSHAComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectSHAComment" Group="{parameter:GenericFieldsGroup}" />
+    <Field ID="{df96c2a2-d85c-4d10-ac1f-c5d9bf87873c}" Name="GtBAProjectEnv" DisplayName="Status miljø" Type="Choice" Format="RadioButtons" Group="{parameter:GenericFieldsGroup}" Description="Har det vært hendelser knyttet til miljø i siste periode? " StaticName="GtBAProjectEnv">
         <CHOICES>
             <CHOICE>Ingen hendelser siste måned</CHOICE>
             <CHOICE>Hendelse registrert siste måned</CHOICE>
         </CHOICES>
     </Field>
-    <Field Type="Note" DisplayName="Kommentar, miljø" Description="" RichText="FALSE" ID="{cf7714a7-bec5-4c94-aa8a-e624148972a2}" StaticName="GtBAProjectEnvComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectEnvComment" Group="{parameter:GenericFieldsGroup}" />
-    <Field ID="{f2a206c4-3b95-426b-9d46-dc9f283ed453}" Name="GtBAProjectPolitical" DisplayName="Siste politiske vedtak" Type="DateTime" Format="DateOnly" Group="{parameter:GenericFieldsGroup}" Description="" StaticName="GtBAProjectPolitical"></Field>
-    <Field Type="Note" DisplayName="Kommentar, siste politiske vedtak" Description="" RichText="FALSE" ID="{884d1db9-b8a5-4949-b74d-57d1ae0a2cf9}" StaticName="GtBAProjectPoliticalComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectPoliticalComment" Group="{parameter:GenericFieldsGroup}" />
-    <Field ID="{c3ef03c1-b6b8-4b9f-a0e5-3e119d23522f}" Name="GtBAProjectPoliticalLink" DisplayName="Lenke til siste politiske vedtak" Type="URL" Group="{parameter:GenericFieldsGroup}" Description="" Format="Hyperlink" StaticName="GtBAProjectPoliticalLink"></Field>
+    <Field Type="Note" DisplayName="Kommentar, miljø" Description="Oppsummer kort det totale miljø-bildet for prosjektet og hvilke tiltak det planlegges for i neste periode" RichText="FALSE" ID="{cf7714a7-bec5-4c94-aa8a-e624148972a2}" StaticName="GtBAProjectEnvComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectEnvComment" Group="{parameter:GenericFieldsGroup}" />
+    <Field ID="{f2a206c4-3b95-426b-9d46-dc9f283ed453}" Name="GtBAProjectPolitical" DisplayName="Siste politiske vedtak" Type="DateTime" Format="DateOnly" Group="{parameter:GenericFieldsGroup}" Description="Når ble siste politiske vedtak som påvirker prosjektet fattet?" StaticName="GtBAProjectPolitical"></Field>
+    <Field Type="Note" DisplayName="Kommentar, siste politiske vedtak" Description="Kommentar til hvordan siste politiske vedtak påvirker prosjektet" RichText="FALSE" ID="{884d1db9-b8a5-4949-b74d-57d1ae0a2cf9}" StaticName="GtBAProjectPoliticalComment" UnlimitedLengthInDocumentLibrary="TRUE" Name="GtBAProjectPoliticalComment" Group="{parameter:GenericFieldsGroup}" />
+    <Field ID="{c3ef03c1-b6b8-4b9f-a0e5-3e119d23522f}" Name="GtBAProjectPoliticalLink" DisplayName="Lenke til siste politiske vedtak" Type="URL" Group="{parameter:GenericFieldsGroup}" Description="Lenke til f. eks dokument/artikkel om siste politiske vedtak" Format="Hyperlink" StaticName="GtBAProjectPoliticalLink"></Field>
     <Field ID="{165b92ca-3224-4a86-a749-3b06d315947f}" Name="GtBAProjectPrognosisThisYear" DisplayName="Prognose i år" Type="Number" Group="{parameter:GenericFieldsGroup}" Description="" StaticName="GtBAProjectPrognosisThisYear"></Field>
-    <Field ID="{f73a2025-53ba-468e-a18f-3714a2a6c71e}" Name="GtBAProjectStatusCase" DisplayName="Status plan- og byggesak" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="" FillInChoice="TRUE" StaticName="GtBAProjectStatusCase">
+    <Field ID="{f73a2025-53ba-468e-a18f-3714a2a6c71e}" Name="GtBAProjectStatusCase" DisplayName="Status plan- og byggesak" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="Hva er status på plan- og byggsak for prosjektet?" FillInChoice="TRUE" StaticName="GtBAProjectStatusCase">
         <Default>Reguleringsplan annonsert</Default>
         <CHOICES>
             <CHOICE>Reguleringsplan annonsert</CHOICE>
@@ -57,8 +57,8 @@
             <CHOICE>Klage under behandling</CHOICE>
         </CHOICES>
     </Field>
-    <Field Type="Note" DisplayName="Kommentar, status plan- og byggesak" Description="" RichText="FALSE" ID="{3a998841-f6a1-4445-ab71-94f650287f9c}" StaticName="GtBAProjectStatusCaseComment" Name="GtBAProjectStatusCaseComment" Group="{parameter:GenericFieldsGroup}" />
-    <Field ID="{dfbde199-879c-4de9-aac4-6a3f0dbb22c3}" Name="GtBAStakeholderGroup" DisplayName="Interessentgruppe" Type="Choice" Group="{parameter:GenericFieldsGroup}" Description="" StaticName="GtBAStakeholderGroup">
+    <Field Type="Note" DisplayName="Kommentar, plan- og byggesak" Description="Beskriv eventuelle utfordringer knyttet til plan- og byggesak, samt planlagte tiltak for neste periode" RichText="FALSE" ID="{3a998841-f6a1-4445-ab71-94f650287f9c}" StaticName="GtBAProjectStatusCaseComment" Name="GtBAProjectStatusCaseComment" Group="{parameter:GenericFieldsGroup}" />
+    <Field ID="{dfbde199-879c-4de9-aac4-6a3f0dbb22c3}" Name="GtBAStakeholderGroup" DisplayName="Interessentgruppe" Type="Choice" Group="{parameter:GenericFieldsGroup}" Description="Hvilken interessentgruppe tilhører interessenten?" StaticName="GtBAStakeholderGroup">
         <CHOICES>
             <CHOICE>Politisk</CHOICE>
             <CHOICE>Kommuneadministrasjon</CHOICE>
