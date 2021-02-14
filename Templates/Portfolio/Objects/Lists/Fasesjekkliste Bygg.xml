@@ -1,8 +1,5 @@
-<pnp:ListInstance Title="Fasesjekkliste Bygg" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Fasesjekkliste_Bygg" Hidden="false" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50000" DraftVersionVisibility="0" ContentTypesEnabled="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false" 
+<pnp:ListInstance Title="Fasesjekkliste Bygg" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Fasesjekkliste_Bygg" Hidden="false" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50000" DraftVersionVisibility="0" ContentTypesEnabled="false" RemoveExistingContentTypes="false" EnableFolderCreation="false" EnableAttachments="false" 
     xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
-    <pnp:ContentTypeBindings>
-        <pnp:ContentTypeBinding ContentTypeID="0x0100486B1F8AEA24486FBA1C1BA9146C360C" Default="true" />
-    </pnp:ContentTypeBindings>
     <pnp:Views RemoveExistingViews="true">
         <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Alle elementer" Url="{site}/Lists/Fasesjekkliste_Bygg/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/issuelst.png?rev=44">
             <Query>
@@ -23,4 +20,51 @@
         </View>
     </pnp:Views>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists/Security/DefaultSecurity.xml" />
+    <pnp:FieldRefs>
+        <pnp:FieldRef ID="0e82c395-9ed9-43f9-871a-208215b18558" Name="GtSortOrder" DisplayName="Sorteringsrekkefølge" />
+    </pnp:FieldRefs>
+    <pnp:Fields>
+        <Field Description="" DisplayName="Fase" ID="{325543a5-815d-485d-a9a5-e0773ad762e9}" Name="GtProjectPhase" ShowField="Term1044" SourceID="{{siteid}}" StaticName="GtProjectPhase" Type="TaxonomyFieldType" WebId="{siteid}">
+            <Customization>
+                <ArrayOfProperty>
+                    <Property>
+                        <Name>FilterAssemblyStrongName</Name>
+                        <Value p4:type="q10:string" 
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
+                            xmlns:q10="http://www.w3.org/2001/XMLSchema">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+                    </Property>
+                    <Property>
+                        <Name>FilterClassName</Name>
+                        <Value p4:type="q11:string" 
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
+                            xmlns:q11="http://www.w3.org/2001/XMLSchema">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+                    </Property>
+                    <Property>
+                        <Name>FilterJavascriptProperty</Name>
+                        <Value p4:type="q13:string" 
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
+                            xmlns:q13="http://www.w3.org/2001/XMLSchema">FilteringJavascript</Value>
+                    </Property>
+                    <Property>
+                        <Name>FilterMethodName</Name>
+                        <Value p4:type="q12:string" 
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
+                            xmlns:q12="http://www.w3.org/2001/XMLSchema">GetFilteringHtml</Value>
+                    </Property>
+                    <Property>
+                        <Name>SspId</Name>
+                        <Value p4:type="q1:string" 
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
+                            xmlns:q1="http://www.w3.org/2001/XMLSchema">{sitecollectiontermstoreid}</Value>
+                    </Property>
+                    <Property>
+                        <Name>TermSetId</Name>
+                        <Value p4:type="q2:string" 
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
+                            xmlns:q2="http://www.w3.org/2001/XMLSchema">{ec5ceb95-7259-4282-811f-7c57304be71e}</Value>
+                    </Property>
+                </ArrayOfProperty>
+            </Customization>
+        </Field>
+    </pnp:Fields>
 </pnp:ListInstance>
