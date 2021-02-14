@@ -9,7 +9,19 @@ Prosjektportalen for Office 365 Bygg og Anlegg er bygget av <a href="http://www.
 
 ## Installering ##
 
-Informasjon om installering kommer.
+### Installer med skriptet Install.ps1
+
+Du kan velge om du vil ha med standardinnhold for Bygg og Anlegg med parameterene IncludeAnlegg og IncludeBygg.
+
+### Eksempel
+```
+.\Install.ps1 -Url https://prosjektportalen.sharepoint.com/sites/Prosjektportalenbyggoganlegg -UseWebLogin -IncludeBygg -IncludeAnlegg
+```
+
+
+### Konfigurer manuelt
+
+* Gå til Konfigurasjon av Prosjektportalen, deretter Prosjektmaler. For hver av malene Bygg og Anlegg, rediger elementene og velg standardinnhold: Fasesjekkliste, Planneroppgaver og Standarddokumenter (hhv. for Bygg og Anlegg).
 
 ## Kontakt ##
 

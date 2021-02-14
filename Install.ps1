@@ -99,7 +99,8 @@ if ($IncludeBygg.IsPresent) {
         Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg\Content-Bygg.xml" -ErrorAction Stop
         Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
     }
-} elseif ($IncludeAnlegg.IsPresent) {
+}
+if ($IncludeAnlegg.IsPresent) {
     if ($Upgrade.IsPresent) {
         Write-Host "[INFO] Applying Anlegg PnP content template (Handlers:Files) to [$Url]"
         Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg\Content-Anlegg.xml" -Handlers Files -ErrorAction Stop
