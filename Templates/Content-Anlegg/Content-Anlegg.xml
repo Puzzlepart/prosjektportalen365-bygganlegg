@@ -305,8 +305,8 @@
                     </pnp:DataRows>
                 </pnp:ListInstance>
                 <pnp:ListInstance Title="Planneroppgaver Anlegg" TemplateType="100" Url="Lists/Planneroppgaver_Anlegg" EnableFolderCreation="false" EnableAttachments="false" EnableVersioning="true">
-                    <pnp:DataRows>
-                        <pnp:DataRow>
+                    <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">
+                        <pnp:DataRow >
                             <pnp:DataValue FieldName='Title'>Støtte oppdragsgiver (KTA) i å definere krav og rammer etter behov</pnp:DataValue>
                             <pnp:DataValue FieldName='GtCategory'>Konsept</pnp:DataValue>
                             <pnp:DataValue FieldName='GtChecklist'>Sørge for signert oppdragsbestilling;Avklare økonomiske rammer/erfaringstall</pnp:DataValue>
