@@ -85,7 +85,7 @@ if ($CurrentContext.Url -ne $Url) {
 $BasePath =  "$PSScriptRoot\Templates"
 
 Write-Host "[INFO] Applying PnP template [Portfolio] to [$Url]"
-#Apply-PnPProvisioningTemplate "$BasePath\Portfolio\Portfolio.xml" -ErrorAction Stop
+Apply-PnPProvisioningTemplate "$BasePath\Portfolio\Portfolio.xml" -ErrorAction Stop -Handlers Lists
 Write-Host "[SUCCESS] Successfully applied PnP template [Portfolio] to [$Url]" -ForegroundColor Green
 
 if ($IncludeBygg.IsPresent) {
