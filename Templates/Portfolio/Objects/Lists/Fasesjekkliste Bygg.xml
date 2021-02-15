@@ -24,6 +24,7 @@
         <pnp:FieldRef ID="0e82c395-9ed9-43f9-871a-208215b18558" Name="GtSortOrder" DisplayName="Sorteringsrekkefølge" />
     </pnp:FieldRefs>
     <pnp:Fields>
+        <Field Type="Note" DisplayName="Fase_0" StaticName="j25543a5815d485da9a5e0773ad762e9" Name="j25543a5815d485da9a5e0773ad762e9" ID="{C886122C-1717-4C95-8B6B-8B2E553E5F2D}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" />
         <Field Description="" DisplayName="Fase" ID="{325543a5-815d-485d-a9a5-e0773ad762e9}" Name="GtProjectPhase" ShowField="Term1044" SourceID="{{siteid}}" StaticName="GtProjectPhase" Type="TaxonomyFieldType" WebId="{siteid}">
             <Customization>
                 <ArrayOfProperty>
@@ -62,6 +63,12 @@
                         <Value p4:type="q2:string" 
                             xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" 
                             xmlns:q2="http://www.w3.org/2001/XMLSchema">{ec5ceb95-7259-4282-811f-7c57304be71e}</Value>
+                    </Property>
+                    <Property>
+                        <Name>TextField</Name>
+                        <Value p4:type="q6:string"
+                            xmlns:q6="http://www.w3.org/2001/XMLSchema"
+                            xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{C886122C-1717-4C95-8B6B-8B2E553E5F2D}</Value>
                     </Property>
                 </ArrayOfProperty>
             </Customization>
