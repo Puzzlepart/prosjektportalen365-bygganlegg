@@ -21,7 +21,7 @@
         <!-- ID: 30 -->
         <pnp:DataRow>
             <pnp:DataValue FieldName="GtSortOrder">300</pnp:DataValue>
-            <pnp:DataValue FieldName="Title">HP-fase</pnp:DataValue>
+            <pnp:DataValue FieldName="Title">HP-fase (ikke i bruk)</pnp:DataValue>
             <pnp:DataValue FieldName="GtInternalName">GtBAProjectInvestementPhase</pnp:DataValue>
             <pnp:DataValue FieldName="GtManagedProperty">GtBAProjectInvestementPhaseOWSCHCS</pnp:DataValue>
             <pnp:DataValue FieldName="GtFieldDataType">Text</pnp:DataValue>
