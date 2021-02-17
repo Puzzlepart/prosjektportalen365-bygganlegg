@@ -15,8 +15,8 @@
         <pnp:FieldRef ID="733a47e1-4465-41c0-89e3-037f9a65c403" Name="GtStatusQualityComment" />
         <pnp:FieldRef ID="fc8a879d-83bc-4670-b1f6-c9817e333614" Name="GtStatusRisk" Required="true" />
         <pnp:FieldRef ID="b5932b1d-bee4-410c-aac2-54a7cd9d5381" Name="GtStatusRiskComment" />
-        <pnp:FieldRef ID="b1958607-cd56-4ecb-9ad7-65fb7d3c22c7" Name="GtStatusGainAchievement" Hidden="true" />
-        <pnp:FieldRef ID="cb41572a-78c6-4e33-8505-b97bfd8fd162" Name="GtStatusGainAchievementComment" Hidden="true" />
+        <pnp:FieldRef ID="b1958607-cd56-4ecb-9ad7-65fb7d3c22c7" Name="GtStatusGainAchievement" Hidden="false" />
+        <pnp:FieldRef ID="cb41572a-78c6-4e33-8505-b97bfd8fd162" Name="GtStatusGainAchievementComment" Hidden="false" />
         <pnp:FieldRef ID="c3cfcba3-299d-42e8-827b-a593ada04abc" Name="GtBAProjectSupport" Required="true" />
         <pnp:FieldRef ID="b8c0ad18-467b-4e7d-8d6b-9ca37171f07b" Name="GtBAProjectSupportComment" />
         <pnp:FieldRef ID="58947845-13c8-4cb4-892c-90ea727e22a4" Name="GtBAProjectSHA" Required="true"/>
