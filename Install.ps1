@@ -45,6 +45,8 @@ function Connect-SharePoint {
     }
 }
 
+$InstallStartTime = (Get-Date -Format o)
+
 #region Setting variables
 [System.Uri]$Uri = $Url
 $ManagedPath = $Uri.Segments[1]
@@ -112,5 +114,17 @@ if ($IncludeAnlegg.IsPresent) {
         Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
     }
 }
+
+
+$InstallEndTime = (Get-Date -Format o)
+
+$InstallEntry = @{
+    InstallStartTime = $InstallStartTime; 
+    InstallEndTime   = $InstallEndTime; 
+    InstallVersion   = "PP365 B&A";
+    InstallCommand   = $MyInvocation.Line.Substring(2);
+}
+
+Add-PnPListItem -List "Installasjonslogg" -Values $InstallEntry -ErrorAction SilentlyContinue >$null 2>&1
 
 Disconnect-PnPOnline
