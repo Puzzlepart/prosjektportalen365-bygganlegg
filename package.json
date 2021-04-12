@@ -1,7 +1,7 @@
 {
   "name": "prosjektportalen365-bygg",
-  "version": "0.5.0",
-  "description": "Prosjektportalen for Office 365 Bygg og Anlegg er en tilleggsmodul som installeres over en eksisterende installasjon av Prosjektportalen for Office 365.",
+  "version": "1.0.0",
+  "description": "Prosjektportalen for Microsoft 365 Bygg og Anlegg er en tilleggsmodul som installeres over en eksisterende installasjon av Prosjektportalen 365.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Puzzlepart/prosjektportalen365-bygg.git"
