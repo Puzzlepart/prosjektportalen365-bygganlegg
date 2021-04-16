@@ -28,6 +28,7 @@ if ($CI.IsPresent) {
 }
 
 Write-Host "[INFO] Creating release folder $RELEASE_PATH...  " -NoNewline
+Remove-Item -Path "$ROOT_PATH/release" -Force -Recurse -ErrorAction SilentlyContinue 
 mkdir $RELEASE_PATH >$null 2>&1
 $RELEASE_PATH_TEMPLATES     = (mkdir "$RELEASE_PATH/Templates").FullName
 Write-Host "DONE" -ForegroundColor Green
