@@ -89,7 +89,7 @@
                             <pnp:Property Key="ShowOnFrontpage" Value="false" />
                         </pnp:LocalCustomProperties>
                     </pnp:Term>
-                    <pnp:Term Name="Konsept" ID="dca0a226-0907-4c54-8624-6b51fcac7a92" CustomSortOrder="3" SourceTermId="dca0a226-0907-4c54-8624-6b51fcac7a92">
+                    <pnp:Term Name="Initiering" ID="dca0a226-0907-4c54-8624-6b51fcac7a92" CustomSortOrder="3" SourceTermId="dca0a226-0907-4c54-8624-6b51fcac7a92">
                         <pnp:Labels>
                             <pnp:Label Language="1033" Value="Starting up" IsDefaultForLanguage="true" />
                         </pnp:Labels>
@@ -99,7 +99,7 @@
                             <pnp:Property Key="SubText" Value="Initiering" />
                         </pnp:LocalCustomProperties>
                     </pnp:Term>
-                    <pnp:Term Name="Planlegge" ID="1c286a0e-da40-451a-bab2-9e0583392ee3" CustomSortOrder="4" SourceTermId="1c286a0e-da40-451a-bab2-9e0583392ee3">
+                    <pnp:Term Name="Prosjektering og kontrahering" ID="1c286a0e-da40-451a-bab2-9e0583392ee3" CustomSortOrder="4" SourceTermId="1c286a0e-da40-451a-bab2-9e0583392ee3">
                         <pnp:Labels>
                             <pnp:Label Language="1033" Value="Initiating" IsDefaultForLanguage="true" />
                         </pnp:Labels>
@@ -109,7 +109,7 @@
                             <pnp:Property Key="SubText" Value="Prosjektering, Kontrahering" />
                         </pnp:LocalCustomProperties>
                     </pnp:Term>
-                    <pnp:Term Name="Gjennomføre" ID="9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc" CustomSortOrder="5" SourceTermId="9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc">
+                    <pnp:Term Name="Anleggsfase" ID="9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc" CustomSortOrder="5" SourceTermId="9b45a1ca-ae8c-4f4a-baa3-40353b7dd8fc">
                         <pnp:Labels>
                             <pnp:Label Language="1033" Value="Directing" IsDefaultForLanguage="true" />
                         </pnp:Labels>
@@ -119,7 +119,7 @@
                             <pnp:Property Key="SubText" Value="Anleggsfase" />
                         </pnp:LocalCustomProperties>
                     </pnp:Term>
-                    <pnp:Term Name="Avslutte" ID="1807d6c2-b4bd-415f-98aa-a4a2ccff8d11" CustomSortOrder="6" SourceTermId="1807d6c2-b4bd-415f-98aa-a4a2ccff8d11">
+                    <pnp:Term Name="Overtakelse og overlevering" ID="1807d6c2-b4bd-415f-98aa-a4a2ccff8d11" CustomSortOrder="6" SourceTermId="1807d6c2-b4bd-415f-98aa-a4a2ccff8d11">
                         <pnp:Labels>
                             <pnp:Label Language="1033" Value="Closing" IsDefaultForLanguage="true" />
                         </pnp:Labels>
@@ -129,7 +129,7 @@
                             <pnp:Property Key="SubText" Value="Overtakelse og overlevering" />
                         </pnp:LocalCustomProperties>
                     </pnp:Term>
-                    <pnp:Term Name="Realisere" ID="2f757e1c-7e2b-4be6-9eba-ecafe37531b6" CustomSortOrder="7" SourceTermId="2f757e1c-7e2b-4be6-9eba-ecafe37531b6">
+                    <pnp:Term Name="Bruks og driftsfase" ID="2f757e1c-7e2b-4be6-9eba-ecafe37531b6" CustomSortOrder="7" SourceTermId="2f757e1c-7e2b-4be6-9eba-ecafe37531b6">
                         <pnp:Labels>
                             <pnp:Label Language="1033" Value="Benefits realization" IsDefaultForLanguage="true" />
                         </pnp:Labels>
