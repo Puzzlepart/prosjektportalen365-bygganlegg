@@ -87,30 +87,30 @@ if ($CurrentContext.Url -ne $Url) {
 $BasePath =  "$PSScriptRoot\Templates"
 
 Write-Host "[INFO] Applying PnP template [Portfolio] to [$Url]"
-Apply-PnPProvisioningTemplate "$BasePath\Portfolio\Portfolio.xml" -ErrorAction Stop
+Apply-PnPProvisioningTemplate "$BasePath\Portfolio.pnp" -ErrorAction Stop
 Write-Host "[SUCCESS] Successfully applied PnP template [Portfolio] to [$Url]" -ForegroundColor Green
 
 if ($IncludeBygg.IsPresent) {
     if ($Upgrade.IsPresent) {
         Write-Host "[INFO] Applying Bygg PnP content template (Handlers:Files) to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg\Content-Bygg.xml" -Handlers Files -ErrorAction Stop
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg.pnp" -Handlers Files -ErrorAction Stop
         Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
     }
     else {
         Write-Host "[INFO] Applying Bygg PnP content template to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg\Content-Bygg.xml" -ErrorAction Stop
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg.pnp" -ErrorAction Stop
         Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
     }
 }
 if ($IncludeAnlegg.IsPresent) {
     if ($Upgrade.IsPresent) {
         Write-Host "[INFO] Applying Anlegg PnP content template (Handlers:Files) to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg\Content-Anlegg.xml" -Handlers Files -ErrorAction Stop
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg.pnp" -Handlers Files -ErrorAction Stop
         Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
     }
     else {
         Write-Host "[INFO] Applying Anlegg PnP content template to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg\Content-Anlegg.xml" -ErrorAction Stop
+        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg.pnp" -ErrorAction Stop
         Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
     }
 }
@@ -121,7 +121,7 @@ $InstallEndTime = (Get-Date -Format o)
 $InstallEntry = @{
     InstallStartTime = $InstallStartTime; 
     InstallEndTime   = $InstallEndTime; 
-    InstallVersion   = "PP365 B&A";
+    InstallVersion   = "B&A VERSION_PLACEHOLDER";
     InstallCommand   = $MyInvocation.Line.Substring(2);
 }
 
