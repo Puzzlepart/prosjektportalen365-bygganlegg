@@ -1,4 +1,4 @@
-<pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+<pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03ProvisioningSchema">
     <Field ID="{b02982d3-9e9f-4172-a576-34bcbe3b8332}" Name="GtBAEndDateOriginal" DisplayName="Opprinnelig overtakelsesdato" Type="DateTime" Format="DateOnly" Group="{parameter:GenericFieldsGroup}" Description="Hva er (planlagt) overtakelsesdato hvor bestiller overtar prosjektleveransene" StaticName="GtBAEndDateOriginal"></Field>
     <Field ID="{3060379a-34d5-4bfb-a97d-f6efa834ff69}" Name="GtBAProjectInvestementPhase" Hidden="true" DisplayName="HP-fase" Type="Choice" Format="Dropdown" Group="{parameter:GenericFieldsGroup}" Description="" FillInChoice="TRUE" StaticName="GtBAProjectInvestementPhase">
         <CHOICES>

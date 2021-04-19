@@ -1,5 +1,5 @@
 <pnp:ListInstance Title="Statusseksjoner" TemplateType="100" Url="Lists/Statusseksjoner" ContentTypesEnabled="true" Hidden="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false" 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03ProvisioningSchema">
     <pnp:DataRows KeyColumn="Title" UpdateBehavior="Skip">
         <pnp:DataRow>
             <pnp:DataValue FieldName="GtSortOrder">100</pnp:DataValue>

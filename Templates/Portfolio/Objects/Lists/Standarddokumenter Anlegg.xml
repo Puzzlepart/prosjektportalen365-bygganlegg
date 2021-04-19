@@ -1,5 +1,5 @@
 <pnp:ListInstance Title="Standarddokumenter Anlegg" TemplateType="101" Url="Standarddokumenter_Anlegg" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" EnableAttachments="false" 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03ProvisioningSchema">
     <pnp:Views>
         <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Alle dokumenter" Url="{site}/Standarddokumenter_Anlegg/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
             <Query>
