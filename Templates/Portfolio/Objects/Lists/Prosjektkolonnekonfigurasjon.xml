@@ -1,5 +1,5 @@
 <pnp:ListInstance Title="Prosjektkolonnekonfigurasjon" Description="" DocumentTemplate="" Hidden="true" TemplateType="100" Url="Lists/Prosjektkolonnekonfigurasjon" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" ContentTypesEnabled="true" RemoveExistingContentTypes="true" EnableFolderCreation="false" EnableAttachments="false" 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03ProvisioningSchema">
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
     <pnp:DataRows UpdateBehavior="Skip" KeyColumn="Title">
         <pnp:DataRow>
             <pnp:DataValue FieldName="Title">Status SHA (Ingen)</pnp:DataValue>
