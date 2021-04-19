@@ -127,4 +127,7 @@ $InstallEntry = @{
 
 Add-PnPListItem -List "Installasjonslogg" -Values $InstallEntry -ErrorAction SilentlyContinue >$null 2>&1
 
+
+Connect-SharePoint -Url $AdminSiteUrl -ErrorAction Stop
+Set-PnPTenantSite -NoScriptSite:$true -Url $Url -ErrorAction SilentlyContinue >$null 2>&1        
 Disconnect-PnPOnline
