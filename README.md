@@ -1,5 +1,5 @@
 ﻿﻿
-# Prosjektportalen for Office 365 Bygg og Anlegg  [![version](https://img.shields.io/badge/version-0.5.0-yellow.svg)](https://semver.org)
+# Prosjektportalen for Office 365 Bygg og Anlegg  [![version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://semver.org)
 
 =================
 
