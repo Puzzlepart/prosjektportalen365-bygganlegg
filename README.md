@@ -20,7 +20,12 @@ Prosjektportalen 365 må være installert i miljøet du skal installere til. PP 
 
 ### Installer med skriptet Install.ps1
 
-Du kan velge om du vil ha med standardinnhold for Bygg og Anlegg med parameterene IncludeAnlegg og IncludeBygg.
+For å kjøre PowerShell-skriptet må PnP Powershell brukes. Vi har ikke bundlet en egen versjon av PnP i denne pakken. For å installere kan du gjøre en av følgende
+
+1. Først installere Prosjektportalen 365. Da vil automatisk PnP PowerShell lastes, og samme versjon kan brukes for å installere Bygg og anlegg
+2. Installere PnP PowerShell selv. Det er versjonen SharePointPnPPowerShellOnline som er støttet av dette skriptet. Installer med følgende kommando: `Install-Module SharePointPnPPowerShellOnline`
+
+Du kan velge om du vil ha med standardinnhold for Bygg og Anlegg med parameterene `IncludeAnlegg` og `IncludeBygg`.
 
 ### Eksempel
 
