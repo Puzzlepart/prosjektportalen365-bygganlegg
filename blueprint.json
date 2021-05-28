@@ -1,0 +1,18 @@
+{
+    "package": "package.json",
+    "blueprint": ".README",
+    "input": ".README",
+    "output": "README.md",
+    "logo": {
+      "src": "https://github.com/Puzzlepart/prosjektportalen365/blob/main/assets/PP365%20Piktogram%20Flat%20DIGITAL.png",
+      "width": 119,
+      "height": 119
+    },
+    "placeholder": ["[[", "]]"],
+    "documentationConfig": {
+      "markdown": {
+        "titleLevel": 2
+      }
+    },
+    "line": "cut"
+  }
