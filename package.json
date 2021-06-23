@@ -1,6 +1,6 @@
 {
   "name": "prosjektportalen365-bygganlegg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Prosjektportalen for Microsoft 365 Bygg og Anlegg er en tilleggsmodul som installeres over en eksisterende installasjon av Prosjektportalen 365.",
   "scripts": {
     "postversion": "npx @appnest/readme generate"
