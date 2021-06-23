@@ -8,7 +8,7 @@
 <br />
 
 
-[![version](https://img.shields.io/badge/version-1.0.2-green.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.0.3-green.svg)](https://semver.org)
 
 <details>
 <summary>📖 Innholdsfortegnelse</summary>
@@ -18,7 +18,7 @@
 
 ## ➤ Table of Contents
 
-* [➤ Hva er Prosjektportalen for Office 365 Bygg og Anlegg?](#-hva-er-prosjektportalen-for-office-365-bygg-og-anlegg)
+* [➤ Hva er Prosjektportalen for Microsoft 365 Bygg og Anlegg?](#-hva-er-prosjektportalen-for-microsoft-365-bygg-og-anlegg)
 * [➤ Installering](#-installering)
 	* [Installer med skriptet Install.ps1](#installer-med-skriptet-installps1)
 	* [Eksempel](#eksempel)
@@ -30,11 +30,11 @@
 </details>
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#hva-er-prosjektportalen-for-office-365-bygg-og-anlegg)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#hva-er-prosjektportalen-for-microsoft-365-bygg-og-anlegg)
 
-## ➤ Hva er Prosjektportalen for Office 365 Bygg og Anlegg?
+## ➤ Hva er Prosjektportalen for Microsoft 365 Bygg og Anlegg?
 
-Prosjektportalen for Office 365 Bygg og Anlegg er bygget av <a href="http://www.puzzlepart.com">Puzzlepart AS</a>. Det er en tilleggsmodul som installeres over en eksisterende installasjon av <a href="https://github.com/Puzzlepart/prosjektportalen365">Prosjektportalen for Office 365</a>.
+Prosjektportalen for Microsoft 365 Bygg og Anlegg er bygget av <a href="http://www.puzzlepart.com">Puzzlepart AS</a>. Det er en tilleggsmodul som installeres over en eksisterende installasjon av <a href="https://github.com/Puzzlepart/prosjektportalen365">Prosjektportalen for Microsoft 365</a>.
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#installering)
@@ -85,7 +85,7 @@ Dersom PP365-instansen oppgraderes, så må også PP365 Bygg og anlegg oppgrader
 
 ## ➤ Kontakt
 
-Har du spørsmål om Prosjektportalen for Office 365 - Bygg og anlegg, behov for bistand til installasjon av løsningen eller muligheter for videreutvikling og spesialtilpasninger, ta kontakt med <a href="mailto:prosjektportalen@puzzlepart.com">Prosjektportalen @ Puzzlepart</a>.
+Har du spørsmål om Prosjektportalen for Microsoft 365 - Bygg og anlegg, behov for bistand til installasjon av løsningen eller muligheter for videreutvikling og spesialtilpasninger, ta kontakt med <a href="mailto:prosjektportalen@puzzlepart.com">Prosjektportalen @ Puzzlepart</a>.
 
 For tekniske og funksjonelle spørsmål, ta kontakt med <a href="mailto:jan.lindset@puzzlepart.com">Jan Lindset</a>. Vi gjør oppmerksom på at eventuell bistand vil være en fakturerbar tjeneste. 
 
