@@ -36,6 +36,10 @@
 
 Prosjektportalen for Microsoft 365 Bygg og Anlegg er bygget av <a href="http://www.puzzlepart.com">Puzzlepart AS</a>. Det er en tilleggsmodul som installeres over en eksisterende installasjon av <a href="https://github.com/Puzzlepart/prosjektportalen365">Prosjektportalen for Microsoft 365</a>.
 
+Kort oppsummert bidrar modulen for "Bygg og Anlegg" til å sikre systemstøtte for andre type prosjekter enn standardprosjekter som inngår i basisversjonen av Prosjektportalen 365, dette vil være synlig som to stk nye maler, en for byggeprosjekter og en for anleggsprosjekter.
+Når modulen installeres får man, i tillegg til standardkomponentene fra Prosjektportalen 365, nye termsett, ny statusrapport, og nye oppgave- og fasesjekklister for disse prosjektmalene.
+Som vanlig for Prosjektportalen 365 vil det være mulig å tilpasse de nye malene ytterligere ved å endre på termer som f. eks faser, endre på prosjektegenskaper, statusrapporter, oppgave- og sjekklister. 
+
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#installering)
 
