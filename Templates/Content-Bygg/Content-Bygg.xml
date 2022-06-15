@@ -4,16 +4,6 @@
     <pnp:Preferences></pnp:Preferences>
     <pnp:Templates ID="CONTAINER-TEMPLATE-PP-BYGG-PORTFOLIO-CONTENT-NO-NB">
         <pnp:ProvisioningTemplate ID="TEMPLATE-PP-BYGG-PORTFOLIO-NO-NB" Scope="RootSite">
-            <pnp:Files>
-                <pnp:File Src="Prosjektmaler\Bygg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
-                    <pnp:Properties>
-                        <pnp:Property Key="Title" Value="Prosjektmal - Bygg" />
-                        <pnp:Property Key="GtDescription" Value="Dette er malen for byggeprosjekter. Byggeprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
-                        <pnp:Property Key="IconName" Value="BuildDefinition" />
-                        <pnp:Property Key="IsDefaultTemplate" Value="0" />
-                    </pnp:Properties>
-                </pnp:File>
-            </pnp:Files>
             <pnp:Lists>
                 <pnp:ListInstance Title="Standarddokumenter Bygg" TemplateType="101" Url="Standarddokumenter_Bygg" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" EnableAttachments="false">
                     <pnp:Folders>

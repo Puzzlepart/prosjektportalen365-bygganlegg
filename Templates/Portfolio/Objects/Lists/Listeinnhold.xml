@@ -27,7 +27,7 @@
         </pnp:DataRow>
         <pnp:DataRow>
             <pnp:DataValue FieldName="Title">Standarddokumenter Anlegg</pnp:DataValue>
-            <pnp:DataValue FieldName="GtDescription">Standarddokumenter for byggeprosjekter.</pnp:DataValue>
+            <pnp:DataValue FieldName="GtDescription">Standarddokumenter for anleggsprosjekter.</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccSourceList">Standarddokumenter Anlegg</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccDestinationList">Dokumenter</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccFields">Title</pnp:DataValue>

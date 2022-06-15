@@ -4,16 +4,6 @@
     <pnp:Preferences></pnp:Preferences>
     <pnp:Templates ID="CONTAINER-TEMPLATE-PP-ANLEGG-PORTFOLIO-CONTENT-NO-NB">
         <pnp:ProvisioningTemplate ID="TEMPLATE-PP-ANLEGG-PORTFOLIO-NO-NB" Scope="RootSite">
-            <pnp:Files>
-                <pnp:File Src="Prosjektmaler\Anlegg.txt" Folder="Prosjektmaler" Level="Published" Overwrite="true">
-                    <pnp:Properties>
-                        <pnp:Property Key="Title" Value="Prosjektmal - Anlegg" />
-                        <pnp:Property Key="GtDescription" Value="Anleggsprosjekter har egne faser, egne prosjektegenskaper og egne felter i prosjektstatus." />
-                        <pnp:Property Key="IconName" Value="DeliveryTruck" />
-                        <pnp:Property Key="IsDefaultTemplate" Value="0" />
-                    </pnp:Properties>
-                </pnp:File>
-            </pnp:Files>
             <pnp:Lists>
                 <pnp:ListInstance Title="Standarddokumenter Anlegg" TemplateType="101" Url="Standarddokumenter_Anlegg" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" EnableAttachments="false">
                     <pnp:Folders>

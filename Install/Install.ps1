@@ -84,37 +84,42 @@ if ($CurrentContext.Url -ne $Url) {
     throw "Wrong connection identified - you are not connected to the correct site"
 }
 
-$BasePath =  "$PSScriptRoot\Templates"
+$BasePath = "$PSScriptRoot\Templates"
 
 Write-Host "[INFO] Applying PnP template [Portfolio] to [$Url]"
 Apply-PnPProvisioningTemplate "$BasePath\Portfolio.pnp" -ErrorAction Stop
 Write-Host "[SUCCESS] Successfully applied PnP template [Portfolio] to [$Url]" -ForegroundColor Green
 
-if ($IncludeBygg.IsPresent) {
-    if ($Upgrade.IsPresent) {
-        Write-Host "[INFO] Applying Bygg PnP content template (Handlers:Files) to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg.pnp" -Handlers Files -ErrorAction Stop
-        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
-    }
-    else {
-        Write-Host "[INFO] Applying Bygg PnP content template to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg.pnp" -ErrorAction Stop
-        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
-    }
+if ($IncludeBygg.IsPresent -and -not $Upgrade.IsPresent) {
+    Write-Host "[INFO] Applying Bygg PnP content template to [$Url]"
+    Apply-PnPProvisioningTemplate "$BasePath\Content-Bygg.pnp" -ErrorAction Stop
+    Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
 }
-if ($IncludeAnlegg.IsPresent) {
-    if ($Upgrade.IsPresent) {
-        Write-Host "[INFO] Applying Anlegg PnP content template (Handlers:Files) to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg.pnp" -Handlers Files -ErrorAction Stop
-        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
-    }
-    else {
-        Write-Host "[INFO] Applying Anlegg PnP content template to [$Url]"
-        Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg.pnp" -ErrorAction Stop
-        Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
-    }
+if ($IncludeAnlegg.IsPresent -and -not $Upgrade.IsPresent) {
+    Write-Host "[INFO] Applying Anlegg PnP content template to [$Url]"
+    Apply-PnPProvisioningTemplate "$BasePath\Content-Anlegg.pnp" -ErrorAction Stop
+    Write-Host "[SUCCESS] Successfully applied PnP content template to [$Url]" -ForegroundColor Green
 }
 
+if ($Upgrade.IsPresent) {
+    Write-Host "[INFO] Removing deprecated template files"
+    Remove-PnPFile -SiteRelativeUrl "/Prosjektmaler/Anlegg.txt" -Recycle -Force -ErrorAction SilentlyContinue
+    Remove-PnPFile -SiteRelativeUrl "/Prosjektmaler/Bygg.txt" -Recycle -Force -ErrorAction SilentlyContinue
+}
+
+Write-Host "[INFO] Ensure associated template connections"
+$ContentBygg = Get-PnPListItem -List "Listeinnhold" | ? {$_.FieldValues.Title.Contains("Bygg")}
+$ByggMal = Get-PnPListItem -List "Maloppsett" | ? {$_.FieldValues.Title -eq "Byggprosjekt"}
+$ByggContent = $ContentBygg | % {return $_.Id}
+$Output = Set-PnPListItem -List "Maloppsett" -Identity $ByggMal.Id -Values @{"ListContentConfigLookup" = [String]::Join(',', $ByggContent)}
+
+$ContentAnlegg = Get-PnPListItem -List "Listeinnhold" | ? {$_.FieldValues.Title.Contains("Anlegg")}
+$AnleggMal = Get-PnPListItem -List "Maloppsett" | ? {$_.FieldValues.Title -eq "Anleggsprosjekt"}
+$AnleggContent = $ContentAnlegg | % {return $_.Id}
+$Output = Set-PnPListItem -List "Maloppsett" -Identity $AnleggMal.Id -Values @{"ListContentConfigLookup" = [String]::Join(',', $AnleggContent)}
+
+
+Write-Host "[INFO] Wrapping up installation..."
 
 $InstallEndTime = (Get-Date -Format o)
 
