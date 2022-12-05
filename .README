@@ -8,6 +8,12 @@
 [[ template:toc ]]
 </details>
 
+# ⚠️ Dette repoet vedlikeholdes ikke lengre  ⚠️
+
+Bygg og Anleggsmodulen vedlikeholdes ikke lengre. Dette grunnet at det medfølger i standard Prosjektportalen installasjon eller oppgradering, dette ble lagt inn i versjon 1.8.X
+
+ Se <a href="https://github.com/Puzzlepart/prosjektportalen365">Prosjektportalen for Microsoft 365</a> for mer informasjon.
+
 ## Hva er Prosjektportalen for Microsoft 365 Bygg og Anlegg?
 
 Prosjektportalen for Microsoft 365 Bygg og Anlegg er bygget av <a href="http://www.puzzlepart.com">Puzzlepart AS</a>. Det er en tilleggsmodul som installeres over en eksisterende installasjon av <a href="https://github.com/Puzzlepart/prosjektportalen365">Prosjektportalen for Microsoft 365</a>.
