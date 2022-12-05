@@ -1,9 +1,18 @@
+# ⚠️ Dette repoet vedlikeholdes ikke lengre  ⚠️
+
+Bygg og Anleggsmodulen vedlikeholdes ikke lengre. Dette grunnet at det medfølger i standard Prosjektportalen installasjon eller oppgradering, dette ble lagt inn i versjon 1.8.X
+
+ Se <a href="https://github.com/Puzzlepart/prosjektportalen365">Prosjektportalen for Microsoft 365</a> for mer informasjon.
+<br /><br /><br /><br />
+
 <!-- ⚠️ This README has been generated from the file(s) ".README" ⚠️--><p align="center">
   <img src="https://github.com/Puzzlepart/prosjektportalen365/blob/main/assets/PP365%20Piktogram%20Flat%20DIGITAL.png" alt="Logo" width="119" height="119" />
 </p> <p align="center">
   <b>Prosjektportalen for Microsoft 365 Bygg og Anlegg er en tilleggsmodul som installeres over en eksisterende installasjon av Prosjektportalen 365.</b></br>
   <sub><sub>
 </p>
+
+
 
 <br />
 
